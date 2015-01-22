@@ -23,7 +23,7 @@ Namespace Samples.Draft
                 SolidEdgeCommunity.OleMessageFilter.Register()
 
                 ' Connect to or start Solid Edge.
-                application = SolidEdgeCommunity.SolidEdgeUtils.Connect(True, True)
+                application = SolidEdgeCommunity.SolidEdgeUtils.Connect()
 
                 ' Get a reference to the active document.
                 draftDocument = application.GetActiveDocument(Of SolidEdgeDraft.DraftDocument)(False)

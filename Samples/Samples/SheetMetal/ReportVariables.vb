@@ -23,7 +23,7 @@ Namespace Samples.SheetMetal
                 SolidEdgeCommunity.OleMessageFilter.Register()
 
                 ' Connect to or start Solid Edge.
-                application = SolidEdgeCommunity.SolidEdgeUtils.Start()
+                application = SolidEdgeCommunity.SolidEdgeUtils.Connect()
 
                 ' Get a reference to the active document.
                 document = application.GetActiveDocument(Of SolidEdgePart.SheetMetalDocument)(False)

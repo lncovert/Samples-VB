@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF06D893-679C-4C25-A639-8CAE4633FFD5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Samples</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>940587c9</NuGetPackageImportStamp>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Debug\Samples.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Release\Samples.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Samples.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SolidEdge, Version=107.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Interop.SolidEdge.107.3.0\lib\net40\Interop.SolidEdge.dll</HintPath>
+    </Reference>
+    <Reference Include="SolidEdge.Community, Version=107.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SolidEdge.Community.107.3.1\lib\net40\SolidEdge.Community.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AddObjectsToSelectSet.vb" />
+    <Compile Include="Application\ClearSelectSet.vb" />
+    <Compile Include="Application\CloseAllDocuments.vb" />
+    <Compile Include="Application\CloseAllDocumentsSilent.vb" />
+    <Compile Include="Application\CreateAssemblyDocument.vb" />
+    <Compile Include="Application\CreateDraftDocument.vb" />
+    <Compile Include="Application\CreatePartDocument.vb" />
+    <Compile Include="Application\CreateSheetMetalDocument.vb" />
+    <Compile Include="Application\OpenDocument.vb" />
+    <Compile Include="Application\ReportActiveSelectSet.vb" />
+    <Compile Include="Application\ReportAddIns.vb" />
+    <Compile Include="Application\ReportEnvironments.vb" />
+    <Compile Include="Application\ReportGlobalParameters.vb" />
+    <Compile Include="Application\ReportGlobalSystemInformation.vb" />
+    <Compile Include="Application\ReportInstallData.vb" />
+    <Compile Include="Application\ReportMaterialLibraryFile.vb" />
+    <Compile Include="Application\ReportMaterials.vb" />
+    <Compile Include="Application\StartSolidEdge.vb" />
+    <Compile Include="Assembly\AddCustomProperties.vb" />
+    <Compile Include="Assembly\AddDerivedConfiguration.vb" />
+    <Compile Include="Assembly\AddNewConfigurationAndApply.vb" />
+    <Compile Include="Assembly\AddOccurrenceByFilename.vb" />
+    <Compile Include="Assembly\AddOccurrencesWithTransform.vb" />
+    <Compile Include="Assembly\AddOccurrenceWithMatrix.vb" />
+    <Compile Include="Assembly\CreateCoffeePot.vb" />
+    <Compile Include="Assembly\CreateNewAssemblyDocument.vb" />
+    <Compile Include="Assembly\CreateStructuralFrame.vb" />
+    <Compile Include="Assembly\DeleteCustomProperties.vb" />
+    <Compile Include="Assembly\DeleteOccurrenceGroundRelations.vb" />
+    <Compile Include="Assembly\ReportConfigurations.vb" />
+    <Compile Include="Assembly\ReportFileProperties.vb" />
+    <Compile Include="Assembly\ReportInterference.vb" />
+    <Compile Include="Assembly\ReportOccurrenceRelations.vb" />
+    <Compile Include="Assembly\ReportOccurrences.vb" />
+    <Compile Include="Assembly\ReportRangeBoxes.vb" />
+    <Compile Include="Assembly\ReportRelations3d.vb" />
+    <Compile Include="Assembly\ReportTubes.vb" />
+    <Compile Include="Assembly\ReportVariables.vb" />
+    <Compile Include="Assembly\SaveAsJT.vb" />
+    <Compile Include="Assembly\SaveWindowAsImage.vb" />
+    <Compile Include="Common\FileProperties.vb" />
+    <Compile Include="Draft\AddCustomProperties.vb" />
+    <Compile Include="Draft\AddSheet.vb" />
+    <Compile Include="Draft\ConvertDrawingViewsTo2D.vb" />
+    <Compile Include="Draft\CopyPartsListsToClipboard.vb" />
+    <Compile Include="Draft\CopyPartsListsToClipboardAndPasteIntoExcel.vb" />
+    <Compile Include="Draft\CreateAssemblyDrawingView.vb" />
+    <Compile Include="Draft\CreateBalloon.vb" />
+    <Compile Include="Draft\CreateCircle2dByCenterRadius.vb" />
+    <Compile Include="Draft\CreateCirclesWithDimensions.vb" />
+    <Compile Include="Draft\CreateDraftDocument.vb" />
+    <Compile Include="Draft\CreateLeader.vb" />
+    <Compile Include="Draft\CreateLinesIn45DegreeIncrements.vb" />
+    <Compile Include="Draft\CreateLineWithDimensions.vb" />
+    <Compile Include="Draft\CreatePartDrawingView.vb" />
+    <Compile Include="Draft\CreatePartViewWithDimensions.vb" />
+    <Compile Include="Draft\CreateTextBoxWithCoordinateValuesAsText.vb" />
+    <Compile Include="Draft\DeleteCustomProperties.vb" />
+    <Compile Include="Draft\DrawPolygon.vb" />
+    <Compile Include="Draft\ReportDrawingViews.vb" />
+    <Compile Include="Draft\ReportFileProperties.vb" />
+    <Compile Include="Draft\ReportSections.vb" />
+    <Compile Include="Draft\ReportSheets.vb" />
+    <Compile Include="Draft\ReportVariables.vb" />
+    <Compile Include="Draft\SaveActiveSheetAsEMF.vb" />
+    <Compile Include="Draft\SaveWindowAsImage.vb" />
+    <Compile Include="Draft\UpdateDrawingViewsInWorkingSection.vb" />
+    <Compile Include="Draft\WritePartsListsToExcel.vb" />
+    <Compile Include="Helpers.vb" />
+    <Compile Include="Part\AddCustomProperties.vb" />
+    <Compile Include="Part\ComputePhysicalPropertiesAndReport.vb" />
+    <Compile Include="Part\CreateBsplineCurves2dByPoints.vb" />
+    <Compile Include="Part\CreateChamferByAddEqualSetback.vb" />
+    <Compile Include="Part\CreateChamferByAddSetbackAngle.vb" />
+    <Compile Include="Part\CreateChamferByAddUnequalSetback.vb" />
+    <Compile Include="Part\CreateCircle2dByCenterRadius.vb" />
+    <Compile Include="Part\CreateExtrudedSurfaceByCircles2d.vb" />
+    <Compile Include="Part\CreateFaceRotateByGeometry.vb" />
+    <Compile Include="Part\CreateFaceRotateByPoints.vb" />
+    <Compile Include="Part\CreateFamilyMemberSuppressedFeature.vb" />
+    <Compile Include="Part\CreateFiniteExtrudedProtrusion.vb" />
+    <Compile Include="Part\CreateFiniteRevolvedProtrusion.vb" />
+    <Compile Include="Part\CreateHoleWithUserDefinedPattern.vb" />
+    <Compile Include="Part\CreatePartDocument.vb" />
+    <Compile Include="Part\CreatePolygon.vb" />
+    <Compile Include="Part\CreateRoundWithMultipleEdges.vb" />
+    <Compile Include="Part\CreateSimpleLoftedCutout.vb" />
+    <Compile Include="Part\CreateSlot.vb" />
+    <Compile Include="Part\CreateSweptProtrusion.vb" />
+    <Compile Include="Part\CreateThickenFeatures.vb" />
+    <Compile Include="Part\DeleteCustomProperties.vb" />
+    <Compile Include="Part\GetPhysicalPropertiesAndReport.vb" />
+    <Compile Include="Part\HealAndOptimizeBody.vb" />
+    <Compile Include="Part\MoveOrderedFeaturesToSynchronous.vb" />
+    <Compile Include="Part\PartHelper.vb" />
+    <Compile Include="Part\PlaceFeatureLibrary.vb" />
+    <Compile Include="Part\Recompute.vb" />
+    <Compile Include="Part\RecomputeModel.vb" />
+    <Compile Include="Part\ReportBodyFacetData.vb" />
+    <Compile Include="Part\ReportBodyRange.vb" />
+    <Compile Include="Part\ReportEdgebarFeatures.vb" />
+    <Compile Include="Part\ReportFamilyMembers.vb" />
+    <Compile Include="Part\ReportFileProperties.vb" />
+    <Compile Include="Part\ReportVariables.vb" />
+    <Compile Include="Part\SaveAsJT.vb" />
+    <Compile Include="Part\SaveWindowAsImage.vb" />
+    <Compile Include="Part\SaveWindowAsImageUsingBitBlt.vb" />
+    <Compile Include="Part\SetModelingModeToOrdered.vb" />
+    <Compile Include="Part\SetModelingModeToSynchronous.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SheetMetal\AddCustomProperties.vb" />
+    <Compile Include="SheetMetal\ComputePhysicalPropertiesAndReport.vb" />
+    <Compile Include="SheetMetal\CreateBaseTab.vb" />
+    <Compile Include="SheetMetal\CreateBaseTabByCircle.vb" />
+    <Compile Include="SheetMetal\CreateDimple.vb" />
+    <Compile Include="SheetMetal\CreateEtch.vb" />
+    <Compile Include="SheetMetal\CreateExtrudedCutout.vb" />
+    <Compile Include="SheetMetal\CreateFamilyMemberWithSuppressedFeature.vb" />
+    <Compile Include="SheetMetal\CreateHoleWithUserDefinedPattern.vb" />
+    <Compile Include="SheetMetal\CreateLoftedFlange.vb" />
+    <Compile Include="SheetMetal\CreateSheetMetalDocument.vb" />
+    <Compile Include="SheetMetal\CreateSlot.vb" />
+    <Compile Include="SheetMetal\DeleteCustomProperties.vb" />
+    <Compile Include="SheetMetal\GetPhysicalPropertiesAndReport.vb" />
+    <Compile Include="SheetMetal\HealAndOptimizeBody.vb" />
+    <Compile Include="SheetMetal\MoveAllOrderedFeaturesToSynchronous.vb" />
+    <Compile Include="SheetMetal\PlaceFeatureLibrary.vb" />
+    <Compile Include="SheetMetal\Recompute.vb" />
+    <Compile Include="SheetMetal\RecomputeModel.vb" />
+    <Compile Include="SheetMetal\ReportEdgeBarFeatures.vb" />
+    <Compile Include="SheetMetal\ReportFamilyMembers.vb" />
+    <Compile Include="SheetMetal\ReportFileProperties.vb" />
+    <Compile Include="SheetMetal\ReportVariables.vb" />
+    <Compile Include="SheetMetal\SaveAsFlatDXF.vb" />
+    <Compile Include="SheetMetal\SaveAsJT.vb" />
+    <Compile Include="SheetMetal\SaveWindowAsImage.vb" />
+    <Compile Include="SheetMetal\SetModelingModeToOrdered.vb" />
+    <Compile Include="SheetMetal\SetModelingModeToSynchronous.vb" />
+    <Compile Include="SheetMetal\SheetMetalHelper.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\SolidEdge.Community.107.3.1\build\net40\SolidEdge.Community.targets" Condition="Exists('..\packages\SolidEdge.Community.107.3.1\build\net40\SolidEdge.Community.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SolidEdge.Community.107.3.1\build\net40\SolidEdge.Community.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SolidEdge.Community.107.3.1\build\net40\SolidEdge.Community.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

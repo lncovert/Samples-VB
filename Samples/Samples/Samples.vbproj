@@ -131,6 +131,7 @@
     <Compile Include="Draft\CreatePartDrawingView.vb" />
     <Compile Include="Draft\CreatePartViewWithDimensions.vb" />
     <Compile Include="Draft\CreateTextBoxWithCoordinateValuesAsText.vb" />
+    <Compile Include="Draft\DeleteAllDrawingObjects.vb" />
     <Compile Include="Draft\DeleteCustomProperties.vb" />
     <Compile Include="Draft\DrawPolygon.vb" />
     <Compile Include="Draft\ReportDrawingViews.vb" />
